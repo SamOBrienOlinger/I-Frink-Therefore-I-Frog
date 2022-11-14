@@ -1,5 +1,5 @@
 """
-ASGI config for PROJ_NAME project.
+ASGI config for codestar2022 project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'PROJ_NAME.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'codestar2022.settings')
 
 application = get_asgi_application()
