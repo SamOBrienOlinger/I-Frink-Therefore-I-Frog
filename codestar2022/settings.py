@@ -77,7 +77,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'codestar2022.wsgi.application'
+WSGI_APPLICATION = 'codestardom2022.wsgi.application'
 
 
 # Database
