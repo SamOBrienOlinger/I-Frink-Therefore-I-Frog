@@ -16,31 +16,7 @@ A Django blog project based on the Code Institute CodeStar learning application.
 
 Each post has one author. Readers can leave comments, which store the name and email supplied on the form. An authenticated user can like multiple posts, and each post can have multiple likes through Django's join table. [Blog models](blog/models.py)
 
-```mermaid
-erDiagram
-    accTitle: Blog authors, posts, comments and likes
-    accDescr: Users author and like posts. A comment belongs to one post and stores the name of its commenter.
-    User ||..o{ Post : writes
-    User }o..o{ Post : likes
-    Post ||..o{ Comment : receives
-
-    User {
-        int id PK
-        string username UK
-    }
-    Post {
-        bigint id PK
-        int author_id FK
-        string slug UK
-        string title UK
-    }
-    Comment {
-        bigint id PK
-        bigint post_id FK
-        string name
-        boolean approved
-    }
-```
+[![Users author and like posts. A comment belongs to one post and stores the name of its commenter.](docs/diagrams/blog-authors-posts-comments-and-likes.svg)](docs/diagrams/blog-authors-posts-comments-and-likes.svg)
 
 ## Getting started
 
